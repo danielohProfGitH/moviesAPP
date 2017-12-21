@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self'  data: https://api.themoviedb.org gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <!--www.themoviedb.org-->
+    <meta name="format-detection" content="telephone=no">
+	<meta name="msapplication-tap-highlight" content="no">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">		
+	
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="jquery.mobile/jquery.mobile-1.4.5.min.css">
+	<script src="js/jquery-2.1.0.js"></script>
+	<script src="jquery.mobile/jquery.mobile-1.4.5.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+       
+</head>
+<body>      
+	<div data-role="page" data-theme="a" id="main_page">
+  		<div data-role="header" data-theme="b">
+    		<h1 id="mainT">Movies DB</h1>
+    	</div>
+    	<a href="#" class="ui-btn center-button ui-btn-b ui-shadow ui-mini ui-icon-star ui-corner-all ui-btn-icon-left" data-theme="b" id="LoadFav">Favourite Movies</a>
+  		<div data-role="main" class="ui-content" data-inset="true" id="mainContent">
+    		<div data-role="header"> 
+     			<ul data-role="listview" id="mylist" data-split-icon="star" data-split-theme="c" data-inset="false">
+            	</ul>
+            	<div data-role="popup" id="infodetail" data-theme="a" data-overlay-theme="b" class="ui-content">
+            		<h3 id="titPopup"></h3>
+                	<img id="imgPopup" src=""></img>
+                	<h3 id="ratPopup"></h3>
+                	<img id="imgPopup" src=""></img>
+                	<p id="descrPopup"></p>
+            	</div>
+       		</div>
+  		</div>
+	</div>
+  
+  	<div data-role="page" id="pagetwo" data-theme="a">
+        <div data-role="header" data-theme="b">
+            <h1 class="ui-title">Favourite Movies</h1>
+        </div>
+        <div role="main" class="ui-content">
+        	<a href="#" class="ui-btn center-button ui-btn-b ui-shadow ui-mini ui-icon-home ui-corner-all ui-btn-icon-left" data-theme="b" id="LoadFirstScreen" onClick="gotoPage1();">First Screen</a>
+        </div>
+  	</div>
+  	<script type="text/javascript" src="cordova.js"></script>
+  	<script type="text/javascript" src="js/main.js"></script>
+ 	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
